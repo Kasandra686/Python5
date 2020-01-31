@@ -19,6 +19,6 @@ finally:
     dikt2 = [dikt, {"средняя прибыль": (prize / i)}]
     # print("К сожалению, из-за нехватки времени, я не успела доделать задание, как требовалось в json виде")
     print(dikt2)
-    with open("json_7.json", "w", encoding='utf-8') as jsonfil:
-        json.dump(dikt2, jsonfil)
+    with open("json_7.json", "w",  encoding='utf-8') as jsonfil:
+        json.dump(dikt2, jsonfil ,ensure_ascii=False, indent=4)
     file.close()
