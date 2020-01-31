@@ -2,6 +2,7 @@ import json
 try:
     file = open("text_7.txt", "r" , encoding = 'utf-8')
     dikt=dict()
+    dikt2=[]
     i=0
     prize=0
     for el in file:
@@ -14,7 +15,9 @@ try:
 except IOError:
     print("Произошла ошибка при работе с файлом")
 finally:
-    print("К сожалению, из-за нехватки времени, я не успела доделать задание, как требовалось в json виде")
-    print(dikt)
-    print(f"Средняя прибль неубыточных организаций составляет: {(prize/i)}")
+    dikt2=[dikt, {"средняя прибыль":(prize/i)}]
+    #print("К сожалению, из-за нехватки времени, я не успела доделать задание, как требовалось в json виде")
+    print(dikt2)
+    with open("json_7.json", "w") as jsonfil:
+        json.dump(dikt2,jsonfil)
     file.close()
