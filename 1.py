@@ -1,6 +1,6 @@
 # Так как первое и второе задание схожи, я решила их объединить, мы создаем файл, если он не создан, вводим строки и записваем, потом считаем
 try:
-    file = open("2_text.txt", "w" , encoding = 'utf-8')
+    file = open("text_2.txt", "w" , encoding = 'utf-8')
     strok = " "
     print("Введите текст: ")
     while True:
@@ -16,7 +16,7 @@ finally:
     file.close()
 
 try:
-    file = open("2_text.txt", "r" , encoding = 'utf-8')
+    file = open("text_2.txt", "r" , encoding = 'utf-8')
     i = 0
     slov = 0
     bukv = 0

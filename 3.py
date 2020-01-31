@@ -1,5 +1,5 @@
 try:
-    file = open("3_text.txt", "r", encoding='utf-8')
+    file = open("text_3.txt", "r", encoding='utf-8')
     i = 0
     money = 0
     for strok in file:
